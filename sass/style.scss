@@ -1,0 +1,82 @@
+//Maps
+$color: (
+    azul-base: #4B4B6F,
+    azul-oscuro: #56658A,
+    azul-gris: #B1BFDF,
+    celeste: #C4DDFF,
+    amarillo: #F4FAEB,
+    blanco: #FFFFFF,
+    azul-hover: #22459d,
+    azul-active: #6f8fb7
+);
+$font-size-p: (
+    xs: 10px,
+    s: 12px,
+    m: 14px,
+    l:16px,
+    xl: 20px
+);
+$font-size-h1: (
+    s: 36px,
+    m:46px,
+    l:64px,
+);
+$font-size-h2: (
+    s: 24px,
+    m:36px,
+    l:46px,
+);
+$font-size-h3: (
+    s: 20px,
+    m:24px,
+    l:36px,
+);
+$font-size-h4: (
+    s:18px,
+    m:20px,
+    l:24px,
+);
+//mixins
+@mixin flex ($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin medidas ($width,$height) {
+    width: $width;
+    height: $height;
+}
+//generales
+nav {
+    background-color: map-get($color,celeste );
+    li {
+        .nav-link {
+            color: map-get($color, azul-base );
+            &:hover {
+                color: map-get($color, azul-hover);
+                scale: 1.1;
+            }
+        }
+        .active{
+            color: map-get($color , azul-active);
+        }
+    }      
+}
+body {
+    background-color: map-get($color, azul-base);
+    color: map-get($color, blanco);
+}
+h1 {
+    font-size: map-get($font-size-h1, l );
+}
+h2 {
+    font-size: map-get($font-size-h2, l );
+}
+h3 {
+    font-size: map-get($font-size-h3, l );
+}
+h4 {
+    font-size: map-get($font-size-h4, l );
+}
+

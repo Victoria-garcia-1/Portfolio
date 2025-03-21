@@ -1,0 +1,36 @@
+nav {
+  background-color: #C4DDFF;
+}
+nav li .nav-link {
+  color: #4B4B6F;
+}
+nav li .nav-link:hover {
+  color: #22459d;
+  scale: 1.1;
+}
+nav li .active {
+  color: #6f8fb7;
+}
+
+body {
+  background-color: #4B4B6F;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */

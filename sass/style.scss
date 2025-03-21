@@ -47,6 +47,12 @@ $font-size-h4: (
     width: $width;
     height: $height;
 }
+@mixin card ($width, $bgcolor, $padding) {
+    width: $width;
+    background-color: $bgcolor;
+    padding: $padding;
+}
+
 //generales
 nav {
     background-color: map-get($color,celeste );
@@ -78,5 +84,51 @@ h3 {
 }
 h4 {
     font-size: map-get($font-size-h4, l );
+}
+p {
+    font-size: map-get($font-size-p, xl );
+}
+footer {
+    background-color: map-get($color, celeste );
+    section {
+        @include flex(row, space-between, center );
+        padding: 20px;
+        .footer-contacto {
+            @include flex(row, flex-start, center);
+        }
+    }
+    p {
+        font-size: map-get($font-size-p, l );
+        color: map-get($color, azul-base );
+    }
+}
+//index
+.mi-nombre {
+    background-color: map-get($color, azul-oscuro);
+    padding: 5% 20px 2.5%;
+}
+.sobre-mi {
+    padding: 40px 20px;
+    @include flex(row, space-between , center );
+    .texto {
+        @include medidas(60%, auto );
+    }
+}
+.habilidades-inc {
+    @include flex(column, space-between, center);
+    h3 {
+        @include medidas(100%, auto);
+        @include flex(column, center, center);
+        padding: 10px;
+        background-color: map-get($color, amarillo);
+        color: map-get($color, azul-base);
+    }
+    .drop-habilidades {
+        @include flex(row, space-evenly, center);
+        margin: 20px;
+        .card-body {
+            @include flex(column, center, center);
+        }
+    }
 }
 

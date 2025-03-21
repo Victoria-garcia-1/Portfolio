@@ -33,4 +33,77 @@ h4 {
   font-size: 24px;
 }
 
+p {
+  font-size: 20px;
+}
+
+footer {
+  background-color: #C4DDFF;
+}
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+footer section .footer-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer p {
+  font-size: 16px;
+  color: #4B4B6F;
+}
+
+.mi-nombre {
+  background-color: #56658A;
+  padding: 5% 20px 2.5%;
+}
+
+.sobre-mi {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sobre-mi .texto {
+  width: 60%;
+  height: auto;
+}
+
+.habilidades-inc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.habilidades-inc h3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #F4FAEB;
+  color: #4B4B6F;
+}
+.habilidades-inc .drop-habilidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+.habilidades-inc .drop-habilidades .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
